@@ -1,6 +1,6 @@
 package resources
 
-// Required import(s)
+/** Required import(s) */
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession

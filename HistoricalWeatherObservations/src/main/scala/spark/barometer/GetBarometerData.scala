@@ -8,12 +8,13 @@ object GetBarometerData {
   
    private[this] val barometerData = new DownloadUitlity /** Creating a utility instance for downloading the barometer data */ 
   
-  /** Description: method to download barometer data
-   *	Parameters : None
- 	 *	Return type: Unit
+  /** Method to download barometer data
+   *  
+   *	@param None
+ 	 *	@return Unit
  	 */
   def downloadBarometerData = {
-    // Downloads the historical raw data for the given source
+    /** Downloads the historical barometer data for the given source */
     barometerData.downloadFromGivenURL("https://bolin.su.se/data/stockholm/files/stockholm-historical-weather-observations-2017/air_pressure/raw/stockholm_barometer_1756_1858.txt")
     barometerData.downloadFromGivenURL("https://bolin.su.se/data/stockholm/files/stockholm-historical-weather-observations-2017/air_pressure/raw/stockholm_barometer_1859_1861.txt")
     barometerData.downloadFromGivenURL("https://bolin.su.se/data/stockholm/files/stockholm-historical-weather-observations-2017/air_pressure/raw/stockholm_barometer_1862_1937.txt")

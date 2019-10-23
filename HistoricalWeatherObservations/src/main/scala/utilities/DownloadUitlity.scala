@@ -8,14 +8,15 @@ import java.io.File
 /** Download utility class - used for downloading the files from the given URL */
 class DownloadUitlity {
 
-  /** Description: Downloads the file with the given URL
-   * Parameters: path to be downloaded of String type
-   * Return type: Any - As it is having an exception handling, the super type of all the types is Any
+  /** Downloads the file with the given URL
+   *  
+   * @param path to be downloaded of String type
+   * @return Any - As it is having an exception handling, the super type of all the types is Any
    */
   def downloadFromGivenURL(urlToBeDownloaded:String) = {
     try{
       ScalaLogger.log.info("Going to download the data from the given URL")
-      new URL(urlToBeDownloaded) #> new File(urlToBeDownloaded.split("/").last) !! // Download the file in the given location, preserves the filename
+      new URL(urlToBeDownloaded) #> new File(urlToBeDownloaded.split("/").last) !! /** Download the file in the given location, preserves the filename */
     }
     catch{
       case e:Exception => println("Exception occured in the method... " +  ScalaLogger.getMethodName)

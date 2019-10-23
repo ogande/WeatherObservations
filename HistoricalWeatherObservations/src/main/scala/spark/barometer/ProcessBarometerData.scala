@@ -131,7 +131,7 @@ object ProcessBarometerData {
     try {
       /** Creating the dataframes for all the available periods */
       val Data1756To1858 = SparkInstance.spark.read.format(typeOfFormat).load("file:/databricks/driver/BarometerData/1756_1858")
-      val Data1859To1861 = SparkInstance.spark.read.format(typeOfFormat).load("file:/databricks/driver/BarometerData/1859_1961")
+      val Data1859To1861 = SparkInstance.spark.read.format(typeOfFormat).load("file:/databricks/driver/BarometerData/1859_1861")
       val Data1862To1937 = SparkInstance.spark.read.format(typeOfFormat).load("file:/databricks/driver/BarometerData/1862_1937")
       val Data1938To1960 = SparkInstance.spark.read.format(typeOfFormat).load("file:/databricks/driver/BarometerData/1938_1960")
       val Data1961To2012 = SparkInstance.spark.read.format(typeOfFormat).load("file:/databricks/driver/BarometerData/1961_2012")

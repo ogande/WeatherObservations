@@ -25,7 +25,7 @@ How to Run/Flow of the program:
 1. object HistoricalDataUnificationAndProcessing having the flow of downloading, cleansing/formatting and saving in the tables with the required conversions and followed by unification of all the data, divided into two broad categories: temperature and barometer
 2. Testing can be done using the structure at \src\test\scala
 3. Querying can be done using the structure at \src\main\scala\queries\
-
+4. Command to run on the cluster: spark-submit --class HistoricalDataUnificationAndProcessing <<pathOf the Jar file with .jar as extension>>
 
 Structure of the project:
 1. Main program is \src\main\scala\HistoricalDataUnificationAndProcessing.scala
